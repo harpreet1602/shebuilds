@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;400;700;800;900&family=Syncopate&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Epilogue", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -17,4 +19,146 @@ a {
 
 .title {
   color: red;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.navbar {
+  color: #07337f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar2 {
+  background-color: #1551b8;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav-links {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.login,
+.signup {
+  border: 1px solid #9bb3e3;
+  background-color: #9bb3e3;
+  color: #07337f;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hero {
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-para {
+  position: absolute;
+  top: 150px;
+  line-height: 3rem;
+  width: 30%;
+  margin-left: 30px;
+  font-size: 20px;
+  color: #07337f;
+}
+
+.hey {
+  font-size: 60px;
+}
+
+.about {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-para {
+  width: 50%;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-box {
+  padding: 5px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 200px;
+}
+
+.content-box div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 300px;
+  width: 30%;
+}
+
+.mental-education {
+  flex-direction: row-reverse;
+  background-color: #9bb3e3;
+}
+
+.footer {
+  background-color: #9bb3e3;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footlink {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-links {
+  margin-bottom: 10px;
 }
