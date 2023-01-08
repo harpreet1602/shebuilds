@@ -37,7 +37,7 @@ const Navbar = () => {
             About
           </Link>
           <Link href="/moodtracker" className="nav-links">
-            Self Assement Tool
+            Self Assessment Tool
           </Link>
           <Link href="/education" className="nav-links">
             Education
