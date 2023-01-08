@@ -288,7 +288,7 @@ const Depression = () => {
                     </SwiperSlide>
                     <SwiperSlide className="bg-[#deebfe] md:py-40 py-5 rounded-lg">
                         <div className="flex flex-col justify-between items-center md:w-[90%] mx-auto">
-                            <p className="md:text-[25px] text-center mt-5 font-bold text-[#1551b8]">"The black dog may always be part of my life but he will never be the beast that he was. We have an understanding. I&apos;ve learnt through knowledge, patience, discipline and humour the worst black dog can be made to heel. If you are in difficulty, never be afraid to ask for help. There is absolutely no shame in doing so the only shame is missing out on life."
+                            <p className="md:text-[25px] text-center mt-5 font-bold text-[#1551b8]">&quot;The black dog may always be part of my life but he will never be the beast that he was. We have an understanding. I&apos;ve learnt through knowledge, patience, discipline and humour the worst black dog can be made to heel. If you are in difficulty, never be afraid to ask for help. There is absolutely no shame in doing so the only shame is missing out on life.&quot;
                             </p>
                         </div>
                     </SwiperSlide>
