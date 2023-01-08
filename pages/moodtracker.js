@@ -66,6 +66,9 @@ const MoodTracker = () => {
             </div>
             <div className="my-40 text-center text-[50px] font-bold">
                 <h1>FEATURE COMING SOON ...</h1>
+                <Link href={'https://github.com/ayushtyagi14/shebuilds/tree/main/chatbot'} className='text-[25px] text-blue-300 hover:underline'>
+                    Check out the GitHub Code!
+                </Link>
             </div>
             <Footer />
         </>
