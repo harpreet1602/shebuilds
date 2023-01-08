@@ -2,7 +2,7 @@ import Footer from "../components/footer";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-const MoodTracker = () => {
+const ComingSoon = () => {
 
     const [loggedIn, setLoggedIn] = useState(false)
 
@@ -63,11 +63,11 @@ const MoodTracker = () => {
                 )}
             </div>
             <div className="my-40 text-center text-[50px] font-bold">
-                <h1>FEATURE COMING SOON ...</h1>
+                <h1>STORIES COMING SOON ...</h1>
             </div>
             <Footer />
         </>
     )
 }
 
-export default MoodTracker;
+export default ComingSoon;

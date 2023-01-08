@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;400;700;800;900&family=Syncopate&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -50,8 +54,8 @@ a {
 }
 
 .nav-links {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .login,
@@ -88,8 +92,8 @@ a {
 }
 
 .about {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   margin-left: 10px;
   margin-right: 10px;
   display: flex;
@@ -142,6 +146,10 @@ a {
   background-color: #9bb3e3;
 }
 
+.vent-out {
+  height: 100vh;
+}
+
 .footer {
   background-color: #9bb3e3;
   padding-bottom: 30px;
@@ -161,4 +169,62 @@ a {
 
 .foot-links {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar,
+  .navbar2 {
+    font-size: 8px;
+  }
+
+  .navlink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .signup {
+    margin-top: 5px;
+  }
+
+  .banner {
+    height: 60vh;
+  }
+
+  .hey {
+    font-size: 40px;
+  }
+
+  .hero-para {
+    font-size: 18px;
+    width: 100%;
+    margin-left: 10px;
+    line-height: 2rem;
+    top: 200px;
+  }
+
+  .about-para {
+    width: 90%;
+  }
+
+  .about-container {
+    margin-top: 20px;
+  }
+
+  .content-box {
+    flex-direction: column;
+  }
+
+  .content-box div {
+    width: 90%;
+  }
 }

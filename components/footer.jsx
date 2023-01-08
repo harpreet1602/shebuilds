@@ -1,22 +1,31 @@
+import { useRouter } from "next/router";
+
 const Footer = () => {
+  const router = useRouter();
   return (
     <>
       <div className="footer">
-        <img src="/logo-black.jpg" alt="logo" width={200} height={200} />
+        <img
+          src="/logo-black.jpg"
+          alt="logo"
+          width={200}
+          height={200}
+          onClick={() => router.push("/")}
+        />
         <div className="footlink">
           <div className="footer-links">
-            <a href="#" className="foot-links">
+            <a href="/education" className="foot-links">
               EDUCATION
             </a>
-            <a href="#" className="foot-links">
-              MOOD TRACKER
+            <a href="/moodtracker" className="foot-links">
+              Self Assement Tool
             </a>
-            <a href="#" className="foot-links">
+            <a href="/vent-it-out" className="foot-links">
               VENT IT OUT
             </a>
           </div>
           <div className="footer-links">
-            <a href="#" className="foot-links">
+            <a href="/about-us" className="foot-links">
               ABOUT
             </a>
             <a href="#" className="foot-links">

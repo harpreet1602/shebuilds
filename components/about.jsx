@@ -2,13 +2,14 @@ const About = () => {
   return (
     <>
       <div className="about">
-        <h1 className="about-title">What is Talking Minds?</h1>
-        <p className="about-para">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          doloribus soluta molestias sit dolor perspiciatis asperiores obcaecati
-          necessitatibus maiores tempora!
+        <h1 className="about-title text-[40px]">What is Talking Minds?</h1>
+        <p className="about-para mt-10">
+          A directory of mental health resources, such as self assessment tools,
+          forum or discussion groups, crisis support, education resources and
+          self-help resources, along with information about various mental
+          health disorders.
         </p>
-        <div className="about-container">
+        <div className="about-container mt-10">
           <div className="about-box">
             <img
               src="/mood-track.png"
@@ -16,7 +17,7 @@ const About = () => {
               width="60px"
               height="60px"
             />
-            <h2>Mood Tracker</h2>
+            <h2>Self Assement Tool</h2>
           </div>
           <div className="about-box">
             <img
@@ -28,12 +29,7 @@ const About = () => {
             <h2>Education</h2>
           </div>
           <div className="about-box">
-            <img
-              src="/relax.png"
-              alt="mood-track"
-              width="60px"
-              height="60px"
-            />
+            <img src="/relax.png" alt="mood-track" width="60px" height="60px" />
             <h2>Vent It Out</h2>
           </div>
         </div>
