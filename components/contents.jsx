@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Content = () => {
   return (
     <>
@@ -9,13 +11,13 @@ const Content = () => {
             <p>
               An AI driven bot that uses Cognitive Behavioral Therapy (CBT)
               technique to help users access their mental health and identify
-              areas that may need attention. It “makes you feel heard”. Its
-              self-help tools help you reframe your issues and see them in a
-              different light.
+              areas that may need attention. It “makes you feel heard”.
+              It&apos;s self-help tools help you reframe your issues and see
+              them in a different light.
             </p>
-            <a href="/moodtracker" className="hover:underline">
+            <Link href="/moodtracker" className="hover:underline">
               Try Now!
-            </a>
+            </Link>
           </div>
         </div>
         <div className="content-box mental-education">
@@ -32,9 +34,9 @@ const Content = () => {
               Mental-health topics like Anxiety, Depression, Addiction,
               Personality Disorder, etc in a unique way through story-telling.
             </p>
-            <a href="/education" className="hover:underline">
+            <Link href="/education" className="hover:underline">
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
         <div className="content-box vent-out">
@@ -44,13 +46,13 @@ const Content = () => {
             <p>
               It is a safe and supportive space for people to share their
               thoughts, feelings, and experiences related to mental health.
-              Whether you're looking for a place to vent your frustrations, seek
-              support from others, or simply connect with others who understand
-              what you're going through, you are welcome here.
+              Whether you&apos;re looking for a place to vent your frustrations,
+              seek support from others, or simply connect with others who
+              understand what you&apos;re going through, you are welcome here.
             </p>
-            <a href="/vent-it-out" className="mt-4 hover:underline">
+            <Link href="/vent-it-out" className="mt-4 hover:underline">
               Join Now!
-            </a>
+            </Link>
           </div>
         </div>
       </div>

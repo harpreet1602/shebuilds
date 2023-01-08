@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Footer = () => {
   const router = useRouter();
@@ -14,26 +15,26 @@ const Footer = () => {
         />
         <div className="footlink">
           <div className="footer-links">
-            <a href="/education" className="foot-links">
+            <Link href="/education" className="foot-links">
               EDUCATION
-            </a>
-            <a href="/moodtracker" className="foot-links">
+            </Link>
+            <Link href="/moodtracker" className="foot-links">
               Self Assement Tool
-            </a>
-            <a href="/vent-it-out" className="foot-links">
+            </Link>
+            <Link href="/vent-it-out" className="foot-links">
               VENT IT OUT
-            </a>
+            </Link>
           </div>
           <div className="footer-links">
-            <a href="/about-us" className="foot-links">
+            <Link href="/about-us" className="foot-links">
               ABOUT
-            </a>
-            <a href="#" className="foot-links">
+            </Link>
+            <Link href="#" className="foot-links">
               PRIVACY POLICY
-            </a>
-            <a href="#" className="foot-links">
+            </Link>
+            <Link href="#" className="foot-links">
               NEED TO TALK?
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Footer from "../components/footer";
+import Link from "next/link";
 
 const Depression = () => {
 
@@ -25,25 +26,26 @@ const Depression = () => {
                 <img src="/logo.jpg" alt="logo" width={100} height={100} onClick={() => router.push("/")}
                     className="cursor-pointer" />
                 <div className="navlink">
-                    <a href="/about-us" className="nav-links">
+                    <Link href="/about-us" className="nav-links">
                         About
-                    </a>
-                    <a href="/moodtracker" className="nav-links">
+                    </Link>
+                    <Link href="/moodtracker" className="nav-links">
                         Self Assement Tool
-                    </a>
-                    <a href="/education" className="nav-links">
+                    </Link>
+                    <Link href="/education" className="nav-links">
                         Education
-                    </a>
-                    <a href="/vent-it-out" className="nav-links">
+                    </Link>
+                    <Link href="/vent-it-out" className="nav-links">
                         Vent It Out
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="http://healthcollective.in/contact/helplines/"
                         className="nav-links"
                         target={"_blank"}
+                        rel="noopener noreferrer"
                     >
                         Helpline
-                    </a>
+                    </Link>
                 </div>
                 {loggedIn && (
                     <>
@@ -71,7 +73,7 @@ const Depression = () => {
             </div>
             <div className="my-20">
                 <h1 className="text-center text-[40px] font-bold">WHAT IS DEPRESSION ?</h1>
-                <p className="w-[80%] mx-auto text-center mt-5">Depression is a mental health condition that can cause a person to feel persistently sad, hopeless, and/or lack energy or motivation. It can also cause physical symptoms such as changes in appetite or sleep patterns, difficulty concentrating, and feelings of worthlessness or guilt. Depression can be severe and can interfere with a person's ability to carry out their daily activities, including work, school, and relationships. It can also lead to thoughts of suicide. Depression is a common condition that can affect anyone, but it is also treatable with therapy, medication, and other forms of support.</p>
+                <p className="w-[80%] mx-auto text-center mt-5">Depression is a mental health condition that can cause a person to feel persistently sad, hopeless, and/or lack energy or motivation. It can also cause physical symptoms such as changes in appetite or sleep patterns, difficulty concentrating, and feelings of worthlessness or guilt. Depression can be severe and can interfere with a person&apos;s ability to carry out their daily activities, including work, school, and relationships. It can also lead to thoughts of suicide. Depression is a common condition that can affect anyone, but it is also treatable with therapy, medication, and other forms of support.</p>
             </div>
             <div className="flex flex-row my-20 w-full">
                 <button
@@ -187,7 +189,7 @@ const Depression = () => {
                     <SwiperSlide className="bg-[#deebfe] pt-5 rounded-lg">
                         <div className="flex flex-col justify-between items-center md:w-[50%] mx-auto">
                             <img src={'/image16.jpg'} className='shadow-2xl' />
-                            <p className="md:text-[25px] text-center mt-5">Having a black dog in your life isn't so much about feeling a bit down, sad or blue...at its worst it's about being devoid of feeling altogether.
+                            <p className="md:text-[25px] text-center mt-5">Having a black dog in your life isn&apos;t so much about feeling a bit down, sad or blue...at its worst it&apos;s about being devoid of feeling altogether.
 
                             </p>
                         </div>
@@ -197,8 +199,8 @@ const Depression = () => {
                             <img src={'/image17.jpg'} className='shadow-2xl' />
                             <p className="md:text-[25px] text-center mt-5">As I got older the black dog got bigger
                                 and he started hanging around all the time.
-                                I'd chase him off with whatever I thought might send him running.
-                                But more often than not he'd come out on top
+                                I&apos;d chase him off with whatever I thought might send him running.
+                                But more often than not he&apos;d come out on top
                                 going down became easier than getting up again.
 
                             </p>
@@ -227,7 +229,7 @@ const Depression = () => {
                     <SwiperSlide className="bg-[#deebfe] pt-5 rounded-lg">
                         <div className="flex flex-col justify-between items-center md:w-[50%] mx-auto">
                             <img src={'/image20.jpg'} className='shadow-2xl' />
-                            <p className="md:text-[25px] text-center mt-5">I learnt that it doesn't matter who you are
+                            <p className="md:text-[25px] text-center mt-5">I learnt that it doesn&apos;t matter who you are
                                 the black dog affects millions and millions of people;
                                 it is an equal opportunity mongrel.
                             </p>
@@ -246,14 +248,14 @@ const Depression = () => {
                         <div className="flex flex-col justify-between items-center md:w-[50%] mx-auto">
                             <img src={'/image22.jpg'} className='shadow-2xl' />
                             <p className="md:text-[25px] text-center mt-5">The more tired and stressed you are the louder he barks,
-                                so it's important to learn how to quiet your mind.
+                                so it&apos;s important to learn how to quiet your mind.
                             </p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="bg-[#deebfe] pt-5 rounded-lg">
                         <div className="flex flex-col justify-between items-center md:w-[50%] mx-auto">
                             <img src={'/image23.jpg'} className='shadow-2xl' />
-                            <p className="md:text-[25px] text-center mt-5">It's been clinically proven that regular exercise
+                            <p className="md:text-[25px] text-center mt-5">It&apos;s been clinically proven that regular exercise
                                 can be as effective for treating mild to moderate depression as antidepressants.
                                 So go for a walk or a run and leave the mutt behind.
                             </p>
@@ -278,15 +280,15 @@ const Depression = () => {
                     <SwiperSlide className="bg-[#deebfe] pt-5 rounded-lg">
                         <div className="flex flex-col justify-between items-center md:w-[50%] mx-auto">
                             <img src={'/image26.jpg'} className='shadow-2xl' />
-                            <p className="md:text-[25px] text-center mt-5">I wouldn't say that I'm grateful for the black dog but he has been an incredible teacher.
+                            <p className="md:text-[25px] text-center mt-5">I wouldn&apos;t say that I&apos;m grateful for the black dog but he has been an incredible teacher.
                                 He forced me to re-evaluate and simplify my life.
-                                I learnt that rather than running away from my problems it's better to embrace them.
+                                I learnt that rather than running away from my problems it&apos;s better to embrace them.
                             </p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="bg-[#deebfe] md:py-40 py-5 rounded-lg">
                         <div className="flex flex-col justify-between items-center md:w-[90%] mx-auto">
-                            <p className="md:text-[25px] text-center mt-5 font-bold text-[#1551b8]">"The black dog may always be part of my life but he will never be the beast that he was. We have an understanding. I've learnt through knowledge, patience, discipline and humour the worst black dog can be made to heel. If you are in difficulty, never be afraid to ask for help. There is absolutely no shame in doing so the only shame is missing out on life."
+                            <p className="md:text-[25px] text-center mt-5 font-bold text-[#1551b8]">"The black dog may always be part of my life but he will never be the beast that he was. We have an understanding. I&apos;ve learnt through knowledge, patience, discipline and humour the worst black dog can be made to heel. If you are in difficulty, never be afraid to ask for help. There is absolutely no shame in doing so the only shame is missing out on life."
                             </p>
                         </div>
                     </SwiperSlide>

@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { FaSpinner } from "react-icons/fa";
 import Footer from "../components/footer";
 import { toast } from "react-toastify";
+import Link from "next/link";
 
 const Signup = () => {
 
@@ -95,25 +96,26 @@ const Signup = () => {
                 <img src="/logo.jpg" alt="logo" width={100} height={100} onClick={() => router.push("/")}
                     className="cursor-pointer" />
                 <div className="navlink">
-                    <a href="/about-us" className="nav-links">
+                    <Link href="/about-us" className="nav-links">
                         About
-                    </a>
-                    <a href="/moodtracker" className="nav-links">
+                    </Link>
+                    <Link href="/moodtracker" className="nav-links">
                         Self Assement Tool
-                    </a>
-                    <a href="/education" className="nav-links">
+                    </Link>
+                    <Link href="/education" className="nav-links">
                         Education
-                    </a>
-                    <a href="/vent-it-out" className="nav-links">
+                    </Link>
+                    <Link href="/vent-it-out" className="nav-links">
                         Vent It Out
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="http://healthcollective.in/contact/helplines/"
                         className="nav-links"
                         target={"_blank"}
+                        rel="noopener noreferrer"
                     >
                         Helpline
-                    </a>
+                    </Link>
                 </div>
                 {loggedIn && (
                     <>

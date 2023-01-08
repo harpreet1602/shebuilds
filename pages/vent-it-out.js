@@ -1,6 +1,7 @@
 import Footer from "../components/footer";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const VentOut = () => {
 
@@ -18,25 +19,26 @@ const VentOut = () => {
                 <img src="/logo.jpg" alt="logo" width={100} height={100} onClick={() => router.push("/")}
                     className="cursor-pointer" />
                 <div className="navlink">
-                    <a href="/about-us" className="nav-links">
+                    <Link href="/about-us" className="nav-links">
                         About
-                    </a>
-                    <a href="/moodtracker" className="nav-links">
+                    </Link>
+                    <Link href="/moodtracker" className="nav-links">
                         Self Assement Tool
-                    </a>
-                    <a href="/education" className="nav-links">
+                    </Link>
+                    <Link href="/education" className="nav-links">
                         Education
-                    </a>
-                    <a href="/vent-it-out" className="nav-links">
+                    </Link>
+                    <Link href="/vent-it-out" className="nav-links">
                         Vent It Out
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="http://healthcollective.in/contact/helplines/"
                         className="nav-links"
                         target={"_blank"}
+                        rel="noopener noreferrer"
                     >
                         Helpline
-                    </a>
+                    </Link>
                 </div>
                 {loggedIn && (
                     <>
@@ -65,7 +67,7 @@ const VentOut = () => {
             <div className="my-20">
                 <h1 className="text-center text-[40px] font-bold">VENT IT OUT</h1>
                 <p className="text-center w-[80%] mx-auto">
-                    OVER TEA- A Virtual Support group to help share what's troubling
+                    OVER TEA- A Virtual Support group to help share what&apos;s troubling
                     them. Through the sharing of experiences, you will be able to
                     offer support, encouragement, and comfort to the other group
                     members, and receive the same in return.
@@ -88,8 +90,8 @@ const VentOut = () => {
                     emotional support.
                 </p>
                 <div className="flex flex-col w-[80%] mx-auto mt-5">
-                    <a href="https://discord.gg/ANmWeXgUm6" target={'_blank'} className='flex flex-row justify-between items-center text-[20px] my-3 border rounded-lg py-10 px-5 hover:cursor-pointer hover:scale-105 transition ease-in-out shadow-lg'>DISCORD <img src="https://img.icons8.com/material-rounded/24/null/chevron-right.png" /></a>
-                    <a href="https://open.spotify.com/playlist/37i9dQZF1DXcCnTAt8CfNe?si=V7ETnyKgSM2O8Ho5QV1v8Q&utm_source=whatsapp" target={'_blank'} className='flex flex-row justify-between items-center text-[20px] my-3 border rounded-lg py-10 px-5 hover:cursor-pointer hover:scale-105 transition ease-in-out shadow-lg'>MUSICAL THERAPY <img src="https://img.icons8.com/material-rounded/24/null/chevron-right.png" /></a>
+                    <Link href="https://discord.gg/ANmWeXgUm6" target={'_blank'} className='flex flex-row justify-between items-center text-[20px] my-3 border rounded-lg py-10 px-5 hover:cursor-pointer hover:scale-105 transition ease-in-out shadow-lg'>DISCORD <img src="https://img.icons8.com/material-rounded/24/null/chevron-right.png" /></Link>
+                    <Link href="https://open.spotify.com/playlist/37i9dQZF1DXcCnTAt8CfNe?si=V7ETnyKgSM2O8Ho5QV1v8Q&utm_source=whatsapp" target={'_blank'} className='flex flex-row justify-between items-center text-[20px] my-3 border rounded-lg py-10 px-5 hover:cursor-pointer hover:scale-105 transition ease-in-out shadow-lg'>MUSICAL THERAPY <img src="https://img.icons8.com/material-rounded/24/null/chevron-right.png" /></Link>
                 </div>
             </div>
             <Footer />

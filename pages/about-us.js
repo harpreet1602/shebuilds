@@ -2,6 +2,7 @@ import Footer from "../components/footer";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
 
@@ -19,25 +20,26 @@ const About = () => {
                 <img src="/logo.jpg" alt="logo" width={100} height={100} onClick={() => router.push("/")}
                     className="cursor-pointer" />
                 <div className="navlink">
-                    <a href="/about-us" className="nav-links">
+                    <Link href="/about-us" className="nav-links">
                         About
-                    </a>
-                    <a href="/moodtracker" className="nav-links">
+                    </Link>
+                    <Link href="/moodtracker" className="nav-links">
                         Self Assement Tool
-                    </a>
-                    <a href="/education" className="nav-links">
+                    </Link>
+                    <Link href="/education" className="nav-links">
                         Education
-                    </a>
-                    <a href="/vent-it-out" className="nav-links">
+                    </Link>
+                    <Link href="/vent-it-out" className="nav-links">
                         Vent It Out
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href="http://healthcollective.in/contact/helplines/"
                         className="nav-links"
                         target={"_blank"}
+                        rel="noopener noreferrer"
                     >
                         Helpline
-                    </a>
+                    </Link>
                 </div>
                 {loggedIn && (
                     <>
@@ -69,10 +71,10 @@ const About = () => {
                     Our vision is to create a comprehensive and accessible resource for people seeking information and support for mental health issues. Our website will provide reliable and up-to-date information about different mental health conditions, including symptoms, causes, and treatment options.
                     <br />
                     <br />
-                    We will also offer a self assessment bot that allows people to assess their own mental health and determine if they may benefit from seeking professional help. The bot will provide personalized recommendations based on the user's responses, including information about local resources and how to access them.
+                    We will also offer a self assessment bot that allows people to assess their own mental health and determine if they may benefit from seeking professional help. The bot will provide personalized recommendations based on the user&apos;s responses, including information about local resources and how to access them.
                     <br />
                     <br />
-                    In addition to the self assessment bot, our website will also offer support groups for people who are looking for a safe and supportive community to connect with others who understand what they're going through. These groups will be moderated by trained professionals and will provide a space for people to share their experiences, offer support to one another, and seek guidance from mental health professionals.
+                    In addition to the self assessment bot, our website will also offer support groups for people who are looking for a safe and supportive community to connect with others who understand what they&apos;re going through. These groups will be moderated by trained professionals and will provide a space for people to share their experiences, offer support to one another, and seek guidance from mental health professionals.
                     <br />
                     <br />
                     Overall, our vision is to create a website that is a trusted and reliable resource for anyone seeking information and support for mental health issues. We hope to empower people to take charge of their own mental health and find the support and resources they need to live their best lives.
