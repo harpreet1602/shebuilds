@@ -81,7 +81,7 @@ const About = () => {
                 </p>
             </div>
             <h1 className="text-center text-[40px] font-bold mt-10">OUR TEAM</h1>
-            <div className="grid grid-cols-2 items-center w-[70%] my-20 mx-auto">
+            <div className="grid lg:grid-cols-2 items-center lg:w-[70%] md:w-[50%] my-20 mx-auto">
                 <div className="border mx-5 flex flex-col items-center w-[350px] h-[400px] mb-10 bg-[#f1f5fb] shadow-xl text-[#1551b8] rounded-xl">
                     <Image src="/ayush.jpg" alt="ayush" width={300} height={300} className='rounded-2xl' />
                     <h1 className="text-[25px] mt-5">AYUSH TYAGI</h1>
