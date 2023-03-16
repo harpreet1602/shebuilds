@@ -38,8 +38,11 @@ const Login = () => {
 
         fetch('https://talking-minds-backend-part.vercel.app/api/user/login', requestOptions)
             .then((response) => {
-                console.log("response", response.json())
-                if (response.status === 400) {
+                // console.log("response", response.json())
+                return response.json();
+            })
+            .then((data)=>{
+                if (data.resCode === 400) {
                     toast.error(
                         "Email or Password is incorrect",
                         {
@@ -48,7 +51,7 @@ const Login = () => {
                         }
                     );
                     setLoading(false)
-                } else if (response.status === 200) {
+                } else if (data.resCode === 200) {
                     toast.success(
                         "Logged in successfully",
                         {
@@ -58,8 +61,13 @@ const Login = () => {
                     );
                     router.push('/')
                     localStorage.setItem("loggedIn", true);
+                    localStorage.setItem("userid", JSON.stringify(data.userId));
+                    // localStorage.setItem("userid", data.userid);
                     setLoading(false)
+                    
                 }
+                console.log(data);
+                
             })
             .catch((error) => console.error(error));
     }
@@ -94,9 +102,13 @@ const Login = () => {
                 {loggedIn && (
                     <>
                     <div className="button">
+                        <Link href="/createprofile" style={{marginRight:
+                        "10px"}}>
+                        Create Profile
+                        </Link>
                         <Link href="/profile" style={{marginRight:
                         "10px"}}>
-                        Profile
+                        View Profile
                         </Link>
                         <button
                             className="login"

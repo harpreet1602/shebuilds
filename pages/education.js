@@ -43,9 +43,13 @@ const Education = () => {
                 {loggedIn && (
                     <>
                     <div className="button">
+                        <Link href="/createprofile" style={{marginRight:
+                        "10px"}}>
+                        Create Profile
+                        </Link>
                         <Link href="/profile" style={{marginRight:
                         "10px"}}>
-                        Profile
+                        View Profile
                         </Link>
                         <button
                             className="login"
