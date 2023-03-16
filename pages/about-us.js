@@ -43,6 +43,11 @@ const About = () => {
                 </div>
                 {loggedIn && (
                     <>
+                    <div className="button">
+                        <Link href="/profile" style={{marginRight:
+                        "10px"}}>
+                        Profile
+                        </Link>
                         <button
                             className="login"
                             onClick={() => {
@@ -52,6 +57,7 @@ const About = () => {
                         >
                             Log Out
                         </button>
+                        </div>
                     </>
                 )}
                 {!loggedIn && (
@@ -83,24 +89,24 @@ const About = () => {
             <h1 className="text-center text-[40px] font-bold mt-10">OUR TEAM</h1>
             <div className="grid lg:grid-cols-2 items-center lg:w-[70%] md:w-[50%] my-20 mx-auto">
                 <div className="border mx-5 flex flex-col items-center w-[350px] h-[400px] mb-10 bg-[#f1f5fb] shadow-xl text-[#1551b8] rounded-xl">
-                    <Image src="/ayush.jpg" alt="ayush" width={300} height={300} className='rounded-2xl' />
-                    <h1 className="text-[25px] mt-5">AYUSH TYAGI</h1>
+                    <Image src="/HargunKaur12.jpeg" alt="Hargun Kaur" width={300} height={300} className='rounded-2xl' />
+                    <h1 className="text-[25px] mt-5">Hargun Kaur</h1>
                     <p className="font-bold">FrontEnd Developer</p>
                 </div>
                 <div className="border mx-5 flex flex-col items-center w-[350px] h-[400px] mb-10 bg-[#f1f5fb] shadow-xl text-[#1551b8] rounded-xl">
-                    <img src="/khushi.jpg" alt="ayush" width={300} height={300} className='rounded-2xl' />
-                    <h1 className="text-[25px] mt-5">KHUSHI MITTAL</h1>
-                    <p className="font-bold">FrontEnd Developer</p>
+                    <img src="/MahakKaur.jpeg" alt="Mahak Kaur" width={300} height={300} className='rounded-2xl' />
+                    <h1 className="text-[25px] mt-5">Mahak Kaur</h1>
+                    <p className="font-bold">UI-UX Design</p>
                 </div>
                 <div className="border mx-5 flex flex-col items-center w-[350px] h-[400px] mb-10 bg-[#f1f5fb] shadow-xl text-[#1551b8] rounded-xl">
-                    <img src="/taranjot.jpg" alt="ayush" width={300} height={300} className='rounded-2xl' />
+                    <img src="/taranjot.jpg" alt="Taranjot Singh" width={300} height={300} className='rounded-2xl' />
                     <h1 className="text-[25px] mt-5">TARANJOT SINGH</h1>
                     <p className="font-bold">Backend Developer</p>
                 </div>
                 <div className="border mx-5 flex flex-col items-center w-[350px] h-[400px] mb-10 bg-[#f1f5fb] shadow-xl text-[#1551b8] rounded-xl">
-                    <img src="/navya.jpg" alt="ayush" width={300} height={300} className='rounded-2xl' />
-                    <h1 className="text-[25px] mt-5">NAVYA GUPTA</h1>
-                    <p className="font-bold">AI/ML Developer</p>
+                    <img src="/HarpreetSingh.jpeg" alt="Harpreet Singh" width={300} height={300} className='rounded-2xl' />
+                    <h1 className="text-[25px] mt-5">Harpreet Singh</h1>
+                    <p className="font-bold">FrontEnd Developer</p>
                 </div>
             </div>
             <Footer />

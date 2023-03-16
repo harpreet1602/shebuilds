@@ -42,6 +42,11 @@ const VentOut = () => {
                 </div>
                 {loggedIn && (
                     <>
+                    <div className="button">
+                        <Link href="/profile" style={{marginRight:
+                        "10px"}}>
+                        Profile
+                        </Link>
                         <button
                             className="login"
                             onClick={() => {
@@ -51,6 +56,7 @@ const VentOut = () => {
                         >
                             Log Out
                         </button>
+                        </div>
                     </>
                 )}
                 {!loggedIn && (

@@ -56,6 +56,11 @@ const Navbar = () => {
         </div>
         {loggedIn && (
           <>
+          <div className="button">
+            <Link href="/profile" style={{marginRight:
+                        "10px"}}>
+              Profile
+            </Link>
             <button
               className="login"
               onClick={() => {
@@ -65,6 +70,7 @@ const Navbar = () => {
             >
               Log Out
             </button>
+          </div>
           </>
         )}
         {!loggedIn && (

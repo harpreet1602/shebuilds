@@ -49,6 +49,11 @@ const Depression = () => {
                 </div>
                 {loggedIn && (
                     <>
+                    <div className="button">
+                        <Link href="/profile" style={{marginRight:
+                        "10px"}}>
+                        Profile
+                        </Link>
                         <button
                             className="login"
                             onClick={() => {
@@ -58,6 +63,7 @@ const Depression = () => {
                         >
                             Log Out
                         </button>
+                        </div>
                     </>
                 )}
                 {!loggedIn && (
